@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .top {
+    flex-grow: 1;
+} */
+
+.header {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav {
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: #e9eaed;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    color: midnightblue;
+    border-bottom: 1px solid midnightblue;
+    padding-bottom: 1px;
+}
+
+.levels {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-header {
+    color: gray;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 22px;
+}
+
+.tasks {
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+#level-tasks {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #6c6c6c;
+}
+
+#level-tasks::after {
+    content: "";
+    display: block;
+    width: 90px;
+    border-bottom: 2px dotted midnightblue;
+    padding-top: 3px;
+}
+
+.task-desc,
+.answer {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 35px;
+    font-weight: 400;
+    max-width: 1500px;
+    max-height: 200px;
+}
+
+
+
+
+.button {
+    height: 40px;
+    width: 150px;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    font-size: 16px;
+    color: midnightblue;
+    background-color: white;
+    margin-top: 20px;
+    display: block;
+}
+
+.button:hover {
+    color: white;
+    border: 2px solid midnightblue;
+    background: linear-gradient(to top, midnightblue, #3232bd);
+    border: 1px solid midnightblue;
+
+}
+
+.inp {
+    width: 200px;
+    height: 20px;
+    border: 1px solid green;
+}
