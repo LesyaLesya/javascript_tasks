@@ -252,3 +252,78 @@ function lev2_7_1() {
     answer.innerText = parseInt(res);
 
 };
+
+
+function lev2_8_1() {
+
+    var answer = document.getElementById('ex2_8_1');
+    var str = document.querySelector('.inp.inp2_8_1').value;
+    var count = 0;
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] == str[i].toUpperCase()) {
+            count ++;
+        }
+
+    }
+    if (count == 2) {
+        answer.innerText = "true";
+    }
+    else {
+        answer.innerText = "false";
+    }
+
+};
+
+
+function lev2_8_2() {
+
+    var answer = document.getElementById('ex2_8_2');
+    var str = "1 22 333 4444 22 5555 1";
+    var arr = str.split(" ");
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].length > 3) {
+            arr.splice(i, 1);
+        }
+    }
+    answer.innerText = JSON.stringify(arr);
+
+};
+
+
+function lev2_8_3() {
+
+    var answer = document.getElementById('ex2_8_3');
+    let arr1 = [1, 2, 3];
+    let arr2 = ['a', 'b', 'c'];
+    for (var i = arr2.length-1; i >= 0 ; i--) {
+        arr1.splice(2, 0, arr2[i]);
+    }
+    answer.innerText = JSON.stringify(arr1);
+
+};
+
+
+function lev2_9_1() {
+
+    var answer = document.getElementById('ex2_9_1');
+    var str = "123456";
+    var arr = str.match(/.{1,2}/g);
+    var sum = 0
+    arr.forEach(n => {
+        sum += parseInt(n)
+    })
+
+    answer.innerText = sum;
+
+};
+
+function lev2_9_2() {
+
+    var answer = document.getElementById('ex2_9_2');
+    var arr = [1, 2, 3, 4, 5];
+    arr.reverse();
+    answer.innerText = JSON.stringify(arr);
+
+};
+
+
