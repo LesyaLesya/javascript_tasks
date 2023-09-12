@@ -261,7 +261,7 @@ function lev2_8_1() {
     var count = 0;
     for (var i = 0; i < str.length; i++) {
         if (str[i] == str[i].toUpperCase()) {
-            count ++;
+            count++;
         }
 
     }
@@ -295,7 +295,7 @@ function lev2_8_3() {
     var answer = document.getElementById('ex2_8_3');
     let arr1 = [1, 2, 3];
     let arr2 = ['a', 'b', 'c'];
-    for (var i = arr2.length-1; i >= 0 ; i--) {
+    for (var i = arr2.length - 1; i >= 0; i--) {
         arr1.splice(2, 0, arr2[i]);
     }
     answer.innerText = JSON.stringify(arr1);
@@ -326,4 +326,48 @@ function lev2_9_2() {
 
 };
 
+
+function lev2_10_1() {
+
+    var answer = document.getElementById('ex2_10_1');
+    var arr = 'abcde abcde abcde'.split(' ');
+    var res = [];
+    for (let i = 0; i < arr.length; i++) {
+        res.push(arr[i].replace(arr[i][0], "!"));
+    }
+    answer.innerText = res.join(" ");
+
+};
+
+function lev2_10_2() {
+
+    var answer = document.getElementById('ex2_10_2');
+    var arr = [1, 2, 3, 3, 4, 5];
+    var flag = false;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == arr[i + 1]) {
+            flag = true;
+            break;
+        }
+    }
+    answer.innerText = JSON.stringify(flag);
+
+};
+
+
+function lev3_1_1() {
+
+    var answer = document.getElementById('ex3_1_1');
+    var str = document.querySelector('.inp.inp3_1_1').value;
+    var arr = str.split('').map(Number);
+    var flag = false;
+    arr.sort(function (a, b) {
+        return a - b;
+    });
+    if (str == arr.join("")) {
+        flag = true;
+    }
+    answer.innerText = JSON.stringify(flag);
+
+};
 
