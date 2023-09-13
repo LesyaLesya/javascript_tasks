@@ -371,3 +371,59 @@ function lev3_1_1() {
 
 };
 
+function lev3_1_2() {
+
+    var answer = document.getElementById('ex3_1_2');
+    var arr = [1, '', 2, 3, '', 5];
+    for (var i=0; i< arr.length; i++) {
+        if (arr[i] === '') {
+            arr.splice(i, 1);
+        }
+    }
+    answer.innerText = JSON.stringify(arr);
+
+};
+
+
+function lev3_1_3() {
+
+    var answer = document.getElementById('ex3_1_3');
+    var arr1 = [1, 2, 3];
+    var arr2 = [1, 2, 3, 4, 5];
+    while (arr2.length > arr1.length) {
+        arr2.pop();
+
+    }
+    answer.innerText = `arr1 - ${JSON.stringify(arr1)}, arr2 - ${JSON.stringify(arr2)}`;
+
+};
+
+function lev3_2_1() {
+
+    var answer = document.getElementById('ex3_2_1');
+    var arr = [1, 2, 5, 1000, 4, 2, 0, 11, 44, 6434, 112, 78, 84];
+    for (var i = 4; i < arr.length; i+=4) {
+        arr.splice(i, 1);
+    }
+    answer.innerText = JSON.stringify(arr);
+
+};
+
+
+function lev3_2_2() {
+
+    var answer = document.getElementById('ex3_2_2');
+    var num = parseInt(document.querySelector('.inp.inp3_2_2').value);
+    answer.innerText = "0".repeat(num);
+
+};
+
+
+function lev3_3_1() {
+
+    var answer = document.getElementById('ex3_3_1');
+    var arr = ["test", "cat", "dog", "rat", "hello", "world"];
+    var res = arr.filter(function(item) {return item.length <= 3;})
+    answer.innerText = JSON.stringify(res);
+
+};

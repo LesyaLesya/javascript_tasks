@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Задачи JS - уровень 3
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <h1 class="header">Задачи уровня 3</h1>
+            <ul class="nav">
+
+                <li>
+                    <a href="#lev3_1" class="nav-link">Уровень 3.1 задачника JavaScript</a>
+                </li>
+                <li>
+                    <a href="#lev3_2" class="nav-link">Уровень 3.2 задачника JavaScript</a>
+                </li>
+
+                <li>
+                    <a href="#lev3_3" class="nav-link">Уровень 3.3 задачника JavaScript</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="levels">
+
+            <h2 id="lev3_1" class="sub-header">Уровень 3.1 задачника JavaScript</h2>
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 1</h3>
+                <p class="task-desc"> Введите число. Проверьте, что цифры этого числа расположены по возрастанию.
+                </p>
+                <input class="inp inp3_1_1">
+                <input type="button" value="GO!" onclick="lev3_1_1();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_1_1" id="ex3_1_1"></span></p>
+
+            </div>
+
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 2</h3>
+                <p class="task-desc"> Дан массив:
+                    [1, '', 2, 3, '', 5]. Удалите из массива все пустые строки. 
+                </p>
+                <input type="button" value="GO!" onclick="lev3_1_2();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_1_2" id="ex3_1_2"></span></p>
+
+            </div>
+
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 3</h3>
+                <p class="task-desc">  Даны два массива:
+                    let arr1 = [1, 2, 3];
+                    let arr2 = [1, 2, 3, 4, 5];
+                    Удалите из большего массива лишние элементы с конца так, чтобы длины массивов стали одинаковыми. 
+                </p>
+                <input type="button" value="GO!" onclick="lev3_1_3();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_1_3" id="ex3_1_3"></span></p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="levels">
+
+            <h2 id="lev3_2" class="sub-header">Уровень 3.2 задачника JavaScript</h2>
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 1</h3>
+                <p class="task-desc"> Дан массив. Удалите из него каждый пятый элемент. [1, 2, 5, 1000, 4, 2, 0, 11, 44, 6434, 112, 78, 84]
+                </p>
+                <input type="button" value="GO!" onclick="lev3_2_1();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_2_1" id="ex3_2_1"></span></p>
+
+            </div>
+
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 2</h3>
+                <p class="task-desc"> Дана некоторая переменная с числом:
+                    Сделайте строку, содержащую столько нулей, сколько указано в переменной. 
+                </p>
+                <input class="inp inp3_2_2">
+                <input type="button" value="GO!" onclick="lev3_2_2();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_2_2" id="ex3_2_2"></span></p>
+
+            </div>
+        </div>
+
+        <div class="levels">
+
+            <h2 id="lev3_3" class="sub-header">Уровень 3.3 задачника JavaScript</h2>
+
+            <div class="tasks">
+                <h3 id="level-tasks">Задача 1</h3>
+                <p class="task-desc">Дан массив со словами. Удалите из него слова, состоящие более чем из трех символов. ["test", "cat", "dog", "rat", "hello", "world"]
+                </p>
+                <input type="button" value="GO!" onclick="lev3_3_1();" class="button">
+                <p class="task-desc">Ответ: <span class="answer answer3_3_1" id="ex3_3_1"></span></p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
